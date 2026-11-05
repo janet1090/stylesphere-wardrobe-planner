@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StyleSphere</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>StyleSphere</h1>
+            <p>Your AI-powered fashion assistant</p>
+        </header>
+
+        <div class="main-content">
+            <div class="form-section">
+                <h2>Select Your Preferences</h2>
+
+                <label>Occasion</label>
+                <select id="occasion">
+                    <option>Casual</option>
+                    <option>Work</option>
+                    <option>Party</option>
+                    <option>Wedding</option>
+                </select>
+
+                <label>Weather</label>
+                <select id="weather">
+                    <option>Hot</option>
+                    <option>Warm</option>
+                    <option>Cold</option>
+                    <option>Rainy</option>
+                </select>
+
+                <label>Style</label>
+                <select id="style">
+                    <option>Chic</option>
+                    <option>Streetwear</option>
+                    <option>Sporty</option>
+                    <option>Classy</option>
+                </select>
+
+                <label>Mood</label>
+                <select id="mood">
+                    <option>Happy</option>
+                    <option>Relaxed</option>
+                    <option>Confident</option>
+                    <option>Romantic</option>
+                </select>
+
+                <button onclick="generateOutfit()">Generate Outfit</button>
+            </div>
+
+            <div class="result-section">
+                <h2>Your Outfit</h2>
+                <div class="outfit-box">
+                    <p id="top"></p>
+                    <p id="bottom"></p>
+                    <p id="shoes"></p>
+                    <p id="accessories"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
